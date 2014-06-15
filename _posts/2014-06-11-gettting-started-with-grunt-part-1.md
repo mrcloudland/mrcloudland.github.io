@@ -13,7 +13,7 @@ First of all, Grunt need to be installed, as well as grunt-cli which is the comm
 npm install grunt grunt-cli
 {% endhighlight %}
 
-Grunt came with many official and thrid-party packages that could be installed with npm. For instance, if you would like to use grunt for compiling CSS from SASS, you could install the grunt-contrib-sass package. The  --save-dev option would save it as a dev-dependency in the package.json file.
+Grunt came with many official and thrid-party packages that could be installed with npm. For instance, if you would like to use grunt for compiling CSS from SASS, you could install the grunt-contrib-sass package. The  --save-dev option would save it as a dev-dependency in the package.json file. <strong>(Update: As this package depends on SASS, and SASS depend on Ruby, make sure you have both of them installed. The package would load up SASS to perform the task)</strong>
 {% highlight js %}
 npm install grunt-contrib-sass --save-dev
 {% endhighlight %}

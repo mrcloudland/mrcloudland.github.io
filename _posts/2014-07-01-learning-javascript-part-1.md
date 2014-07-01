@@ -12,7 +12,7 @@ In this post, I'm going to explain the differences among three JavaScript array 
 
 ### reduce()
 
-
+<br />
 Syntax
 {% highlight js %}
 arr.reduce(callback,[initialValue])
@@ -27,7 +27,7 @@ The reduce() method would take in the call back function and run the values in t
 
 ### map()
 
-
+<br />
 Syntax
 {% highlight js %}
 array.map(callback[, thisArg])
@@ -42,7 +42,7 @@ The map() method would also take in a callback function, but it will take each o
 
 ### forEach()
 
-
+<br />
 Syntax
 {% highlight js %}
 array.forEach(callback[, thisArg])

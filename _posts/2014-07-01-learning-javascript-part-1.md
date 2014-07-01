@@ -12,6 +12,7 @@ In this post, I'm going to explain the differences among three JavaScript array 
 
 ### reduce()
 
+
 Syntax
 {% highlight js %}
 arr.reduce(callback,[initialValue])
@@ -25,6 +26,7 @@ function(previousValue, currentValue, index, array){...}
 The reduce() method would take in the call back function and run the values in the array against the function and return a final value. When the initialValue argument is set, it would become the previousValue of the callback function, and the first value of the array would be the currentValue. Then the function would run with these values, and get a return value. The returned value would be the previousValue for the second run, while the second value of the array becomes the currentValue, and the function runs again. The reduce method would run until the last value of the array is used (as the last currentValue, of course) and the final returned value of the callback function would become the returned value of the reduce() method. By the way, if the initialValue is not set for reduce(), then for the first iteration, the first value of the array is the previousValue while the second value is the currentValue.
 
 ### map()
+
 
 Syntax
 {% highlight js %}
@@ -40,6 +42,7 @@ The map() method would also take in a callback function, but it will take each o
 
 ### forEach()
 
+
 Syntax
 {% highlight js %}
 array.forEach(callback[, thisArg])
@@ -52,4 +55,6 @@ function(item){...}
 
 The forEach() method is quite similar to the map() method, but it's more like a loop, where each of the values of the array is taken out and applied to the callback function and no value is returned.
 
-In summary, all these three methods take in a callback function and run the values from the array against the function. However, reduce() runs the next value with the result from the previous iteration and return a single final value, map() runs each of its values against the function and return an array containing each of the result, and finally forEach() runs each of its values against the function but it does not return any value.
+### Summary
+
+All these three methods take in a callback function and run the values from the array against the function. However, reduce() runs the next value with the result from the previous iteration and return a single final value, map() runs each of its values against the function and return an array containing each of the result, and finally forEach() runs each of its values against the function but it does not return any value.

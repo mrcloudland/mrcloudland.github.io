@@ -10,7 +10,7 @@ This is the 1st post of my JavaScript study notes series.
 
 In this post, I'm going to explain the differences among three JavaScript array methods, reduce(), map() and forEach(). All three of them would require a callback function to be passed in and the function would be applied to the calling array. However, how the function is applied and the results are quite different. So let's dive into these methods one at a time.
 
-reduce()
+### reduce()
 
 Syntax
 {% highlight js %}
@@ -24,7 +24,7 @@ function(previousValue, currentValue, index, array){...}
 
 The reduce() method would take in the call back function and run the values in the array against the function and return a final value. When the initialValue argument is set, it would become the previousValue of the callback function, and the first value of the array would be the currentValue. Then the function would run with these values, and get a return value. The returned value would be the previousValue for the second run, while the second value of the array becomes the currentValue, and the function runs again. The reduce method would run until the last value of the array is used (as the last currentValue, of course) and the final returned value of the callback function would become the returned value of the reduce() method. By the way, if the initialValue is not set for reduce(), then for the first iteration, the first value of the array is the previousValue while the second value is the currentValue.
 
-map()
+### map()
 
 Syntax
 {% highlight js %}
@@ -38,7 +38,7 @@ function(item){...}
 
 The map() method would also take in a callback function, but it will take each of the values in the array and run the value against the function, and return a new array with the returned values from the function. So unlike the reduce() method, the return value from map() method is an array, and the values in the array are independent.
 
-forEach()
+### forEach()
 
 Syntax
 {% highlight js %}
